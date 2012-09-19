@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*common*/
+
+body {
+background-color:#eee;
+}
+h1, h2, h3, a {color:#000}	
+	
+	
+	.main {width:610px; margin:0 auto}
+	.form .opt {display:block; margin:12px 0;}
+	label {color:#000}
+
+
+/*admin*/
+
+	
+	.locations ul {
+		margin:0;
+		padding:0;
+		display:block;
+	}
+	
+		.locations ul li {
+		
+			float:left;
+			list-style:none;
+			padding:0;
+			margin:0 0 0 15px;
+		}
+			.locations ul li select { 
+				width:120px;
+			}
+			
+	.locations label {
+		display:block;
+		margin:15px 0 0 15px;
+		}
+
+
+	.doneBtn {
+		margin:15px 0 0 15px;
+	}
+	
+	
+	
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
