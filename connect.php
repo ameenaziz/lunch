@@ -1,7 +1,7 @@
 <?php
 
 
-$con = mysql_connect("golunch.db.8329506.hostedresource.com","golunch","Nismo_90");
+$con = mysql_connect("","golunch","");
 if (!$con)
   {
   die('Could not connect: ' . mysql_error());
