@@ -36,7 +36,9 @@
                     
                     <form method="post" action="thankyou.php">
                     
-                    <input type="hidden" value="<?php echo $row['event_id'] ?>" name="eventName"  />
+                    <input type="hidden" value="<?php echo $row['event_id'] ?>" name="event_id"  />
+					<input type="hidden" value="<?php echo $_GET['email'] ?>" name="email"  />
+
                     <?php
 					   
 						do {

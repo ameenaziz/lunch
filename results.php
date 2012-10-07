@@ -18,16 +18,17 @@
 				$eventchoices = mysql_query("
 						
 						SELECT event.event_name, restaurants.res_name, count(*)  AS Count
-                                               FROM votes
-                                               INNER JOIN restaurants ON votes.res_id = restaurants.res_id
-                                               INNER JOIN event ON votes.event_id = event.event_id
-                                               WHERE event.event_id = (SELECT MAX(event_id) FROM votes)
-						
+						FROM votes
+						INNER JOIN restaurants ON votes.res_id = restaurants.res_id
+						INNER JOIN event ON votes.event_id = event.event_id
+
+						WHERE event.event_id = $_GET[event_id]
+						group by votes.res_id
+						order by Count desc
 						");
 				
 				$row = mysql_fetch_array($eventchoices);
 				
-				$count = mysql_num_rows($eventchoices); 
 				
 				
 					
@@ -37,7 +38,7 @@
 					do {
 						echo $row['res_name'];
 						echo "<br>";
-						echo $count;
+						echo $row['Count'];
 						echo "<br>";
 					} while($row = mysql_fetch_array($eventchoices));
 			

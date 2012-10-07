@@ -17,13 +17,15 @@
             include ('connect.php');
             
             $selected_radio = $_POST['locations'];
-            $event_name = $_POST['eventName'];
+            $event_id = $_POST['event_id'];
+			$email = $_POST['email'];
+
             
            // echo $event_name;
            // echo "<br><br>";
            /// echo $selected_radio;
-            
-            mysql_query("insert into votes (res_id, event_id) values ($selected_radio, $event_name)");
+            echo "$selected_radio, $event_id, '$email<br><br>";
+            mysql_query("insert into votes (res_id, event_id, email_address) values ($selected_radio, $event_id, '$email'	)");
 		   
             
 			?>
