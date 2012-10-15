@@ -13,6 +13,7 @@
         <h2>Create some choices</h2>
         
 		<?php
+			// test comment
 			include ('connect.php');
 			$result = mysql_query("SELECT * FROM restaurants") or die(mysql_error());  
         ?>
