@@ -1,14 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>go4Lunch | process (step 2)</title>
-<link rel="stylesheet" href="styles/lunch.css" type="text/css" />
-
-</head>
-
+<?php include("header.php"); ?>
 <body>
-    <div class="main">
+    <div class="main process">
     	<h1>Go4lunch | (step 2)</h1>
         <h2>Configurations people and places</h2>
             	
@@ -41,12 +33,13 @@
 					
 					$row = mysql_fetch_array($eventchoices);
 					
-					echo $row['event_name'];
-					echo "<br><br>";
+					echo "<h3><span>Event name </span>"  .$row['event_name'] .  "</h3><br>";
+					
 					
 					do {
-						echo $row['res_name'];
-						echo "<br>";
+						echo "<h4>"  .$row['res_name'] .  "</h4>";
+						
+						
 					} while($row = mysql_fetch_array($eventchoices));
 					
 				?>

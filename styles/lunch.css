@@ -9,42 +9,49 @@ background-color:#eee;
 h1, h2, h3, a {color:#000}	
 	
 	
-	.main {width:610px; margin:0 auto}
+	.main {width:90%; margin:0 auto}
 	.form .opt {display:block; margin:12px 0;}
 	label {color:#000}
 
 
-/*admin*/
 
-	
-	.locations ul {
-		margin:0;
-		padding:0;
-		display:block;
-	}
-	
-		.locations ul li {
-		
-			float:left;
-			list-style:none;
-			padding:0;
-			margin:0 0 0 15px;
-		}
-			.locations ul li select { 
-				width:120px;
-			}
-			
-	.locations label {
-		display:block;
-		margin:15px 0 0 15px;
-		}
+/*Home*/
 
+.ui-field-contain input.ui-input-text, .ui-field-contain textarea.ui-input-text, .ui-field-contain .ui-input-search {
+    display: inline-block;
+    width: 100%;
+}
 
-	.doneBtn {
-		margin:15px 0 0 15px;
-	}
-	
-	
+.ui-field-contain .ui-btn.ui-submit {
+    -moz-box-sizing: border-box;
+    display: inline-block;
+    margin: 15px 0;
+    width: 60%;
+}
+
+.home {
+
+	margin: 0 20px
+}
+
+.home .ui-corner-all {
+	margin:15px 0;
+}
+
+/*Process*/
+.process h3 {
+color:#859CE6;
+}	
+.process h3 span {
+	color:#000;
+}	
+
+.process h4  {
+	margin:0;
+	padding:0;
+	color:#0077CC;
+}	
+
 	
 /* Contain floats: h5bp.com/q */
 .clearfix:before, .clearfix:after { content: ""; display: table; }

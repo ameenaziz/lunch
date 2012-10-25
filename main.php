@@ -1,15 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>go4Lunch | main (Step 3)</title>
-<link rel="stylesheet" href="styles/lunch.css" type="text/css" />
-
-</head>
-
+<?php include("header.php"); ?>
 <body>
     <div class="main">
-    	<h1>Go4lunch</h1>
+    	<h1>Go4lunch | (step 3)</h1>
+    	 <h2>Choose a lunch venu</h2>
                        		
                 <?php
 				   include ('connect.php');
@@ -42,7 +35,8 @@
                     <?php
 					   
 						do {
-							echo ("<input type=\"radio\" name=\"locations\"  value=\" " . $row['res_id'] . " \" >". $row['res_name'] . "</input>");
+							echo ("<input type=\"radio\" id=\"{$row['res_id']}\" name=\"locations\"  value=\" " . $row['res_id'] . " \" ></input>");
+							echo "<label for=\"{$row['res_id']}\">" . $row['res_name'] . "</label>";
 							echo "<br>";
 							
 						} while($row = mysql_fetch_array($eventchoices));
@@ -52,10 +46,11 @@
               	   </form>
                 
                  	
-                 <br /><br />
+                 
 
                		
-                
+                 
+                           
     </div>
 </body>
 </html>
