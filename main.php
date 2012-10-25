@@ -1,7 +1,7 @@
 <?php include("header.php"); ?>
 <body>
     <div class="main">
-    	<h1>Go4lunch | (step 3)</h1>
+    	<h1>Go4lunch | (step 4)</h1>
     	 <h2>Choose a lunch venu</h2>
                        		
                 <?php
