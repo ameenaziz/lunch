@@ -1,11 +1,9 @@
 <?php include("header.php"); ?>
 <body>
-    <div class="main">
-        <div data-role="header" data-theme="a" data-position="fixed">
-            <h1>Step 4 vote on a venue</h1>
-         </div>
-                       		
-                <?php
+<div data-role="page"> 
+	<div data-role="header" data-theme="a" data-position="fixed"><h1>Step 4 vote on a venue</h1></div> 
+	<div data-role="content">
+				 <?php
 				   include ('connect.php');
 					
 					//Get the last inserted data based on the event_id 
@@ -42,16 +40,11 @@
 							
 						} while($row = mysql_fetch_array($eventchoices));
 					?>
-                    <input type="submit" value="Vote"> 
+                    <input type="submit" data-transition="slidefade" value="Vote"> 
                 
               	   </form>
-                
-                 	
-                 
-              	   	<?php include("footer.php"); ?>
-               		
-                 
-                           
-    </div>
+	</div> 
+	<div data-role="footer"><?php include("footer.php"); ?></div> 
+</div> 	
 </body>
 </html>

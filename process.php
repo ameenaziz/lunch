@@ -1,23 +1,15 @@
 <?php include("header.php"); ?>
 <body>
-    <div class="main process">
-         <div data-role="header" data-theme="a" data-position="fixed">
-            <h1>Step 2 Configure people and places</h1>
-         </div>   	
-                <?php
-									 
+<div data-role="page"> 
+	<div data-role="header" data-theme="a" data-position="fixed"><h1>Step 2 Configure people and places</h1></div> 
+	<div data-role="content">
+				<?php
 				   include ('connect.php');
-
     				mysql_query("INSERT INTO event (event_name) VALUES ('$_POST[eventName]')");
-					
 					$event_id = mysql_insert_id();
-
      				foreach ($_POST['opt'] as $res_id) { 
-						
 						mysql_query("INSERT INTO event_choices (event_id, res_id) VALUES ($event_id, $res_id)");	
-					 
 					}	
-					
 					//Get the last inserted data based on the event_id 
 					$eventchoices = mysql_query(
 					
@@ -43,9 +35,10 @@
 					} while($row = mysql_fetch_array($eventchoices));
 					
 				?>
-               		
-               <a href="send.php" data-role="button" data-icon="forward">Send email invites to your friends</a>
-    </div>
-    <?php include("footer.php"); ?>
+               <a href="send.php" data-role="button" data-transition="slidefade" data-icon="forward">Send email invites</a>
+		
+	</div> 
+	<div data-role="footer"><?php include("footer.php"); ?></div> 
+</div> 
 </body>
 </html>

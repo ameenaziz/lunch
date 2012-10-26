@@ -7,5 +7,5 @@
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
 <link rel="stylesheet" href="styles/lunch.css" type="text/css" />
-<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,maximum-scale=1, user-scalable=no" name="viewport">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
 </head>

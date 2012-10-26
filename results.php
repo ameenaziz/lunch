@@ -1,9 +1,8 @@
 <?php include("header.php"); ?>
 <body>
-    <div class="main">
-    	<h1>Go4lunch</h1>
-        <h2>The votes are in!</h2>
-               
+<div data-role="page"> 
+	<div data-role="header"><h2>The votes are in!</h2></div> 
+	<div data-role="content">
 			<?php
             
             	include ('connect.php');
@@ -35,7 +34,13 @@
 					} while($row = mysql_fetch_array($eventchoices));
 			
 			?>
-                
-    </div>
+	</div> 
+	<div data-role="footer"><?php include("footer.php"); ?></div> 
+</div>     
+
+
+
+               
+
 </body>
 </html>
