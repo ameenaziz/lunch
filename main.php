@@ -1,8 +1,9 @@
 <?php include("header.php"); ?>
 <body>
     <div class="main">
-    	<h1>Go4lunch | (step 4)</h1>
-    	 <h2>Choose a lunch venu</h2>
+        <div data-role="header" data-theme="a" data-position="fixed">
+            <h1>Step 4 vote on a venue</h1>
+         </div>
                        		
                 <?php
 				   include ('connect.php');
@@ -47,7 +48,7 @@
                 
                  	
                  
-
+              	   	<?php include("footer.php"); ?>
                		
                  
                            

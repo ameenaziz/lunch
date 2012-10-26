@@ -2,9 +2,10 @@
 
 <body>
     <div class="main home">
-    	<h1>Go4lunch | (step 1)</h1>
-        <h2>Create some choices</h2>
-    	<?php
+        <div data-role="header" data-theme="a" data-position="fixed">
+            <h1>Sep 1 setup choices</h1>
+         </div>
+   	    <?php
 			include ('connect.php');
 			$result = mysql_query("SELECT * FROM restaurants") or die(mysql_error());  
         ?>
@@ -23,13 +24,14 @@
                        
                     ?>
                 </fieldset>
-                <input type="submit" name="formSubmit" value="send" />
+                <input type="submit" name="formSubmit" value="Create lunch event" />
             </div>
-
-           
+   
         </form>
-		       
-
     </div>
-</body>
+    <?php include("footer.php"); ?>
+    
+
+
+</body
 </html>

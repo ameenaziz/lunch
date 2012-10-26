@@ -1,9 +1,9 @@
 <?php include("header.php"); ?>
 <body>
     <div class="main process">
-    	<h1>Go4lunch | (step 2)</h1>
-        <h2>Configurations people and places</h2>
-            	
+         <div data-role="header" data-theme="a" data-position="fixed">
+            <h1>Step 2 Configure people and places</h1>
+         </div>   	
                 <?php
 									 
 				   include ('connect.php');
@@ -43,13 +43,9 @@
 					} while($row = mysql_fetch_array($eventchoices));
 					
 				?>
-                
-                
-                 	
-                 <br /><br />
-
                		
-                <a href="index.php">Go back</a> | <a href="send.php">Send invite</a>
+               <a href="send.php" data-role="button" data-icon="forward">Send email invites to your friends</a>
     </div>
+    <?php include("footer.php"); ?>
 </body>
 </html>

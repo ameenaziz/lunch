@@ -1,9 +1,10 @@
 <?php include("header.php"); ?>
 <body>
     <div class="main">
-    	<h1>Go4lunch</h1>
-        <h2>Thank you for voting</h2>
-               
+      <div data-role="header" data-theme="a" data-position="fixed">
+            <h1>Thank you for voting</h1>
+         </div>
+                     
 			<?php
             
             include ('connect.php');
@@ -21,7 +22,9 @@
 		   
             
 			?>
-                
+
     </div>
+    <?php include("footer.php"); ?>
+
 </body>
 </html>

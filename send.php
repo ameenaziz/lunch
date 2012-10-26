@@ -2,9 +2,9 @@
 <?php include("header.php"); ?>
 <body>
     <div class="main process">
-    	<h1>Go4lunch | (step 3)</h1>
-        <h2>Send emails to people</h2>
-            	
+        <div data-role="header" data-theme="a" data-position="fixed">
+            <h1>Step 3 send email notifications</h1>
+         </div>         	
 				<?php
 
 				$from_name = "Go 4 Lunch Host";
@@ -36,9 +36,7 @@
 
 				echo '<br><br>'
 				?>
-
-               		
-                <a href="index.php">Go back to index page</a> | <a href="main.php">Main page</a>
+				<?php include("footer.php"); ?>
     </div>
 </body>
 </html>
