@@ -1,4 +1,7 @@
-
+<?php
+		session_start();
+		$event_id = $_SESSION['event_id'];
+?>
 <?php include("header.php"); ?>
 <body>
 <div data-role="page"> 
@@ -7,8 +10,7 @@
 		<?php
 
 		//getting that event_id from  the process.php page
-		session_start();
-		$event_id = $_SESSION['event_id'];
+
 		
 		$from_name = "Go 4 Lunch Host";
 		$from_email = "go4lunch@ameenaziz.com";
@@ -39,10 +41,6 @@
 		echo '<br><br>';
 
 		echo 'email sent';
-
-	
-
-
 		?>         	
 
 	</div> 

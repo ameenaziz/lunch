@@ -6,7 +6,7 @@
 				 <?php
 				   include ('connect.php');
 					
-					//getting that event_id from  the url 
+					//getting that event_id from the url 
  					if (isset($_GET['event_id'])) {
 					$event_id = $_GET['event_id'];
 					}

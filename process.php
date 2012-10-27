@@ -1,3 +1,7 @@
+<?php 	
+	session_start();
+	$_SESSION['event_id'] = $event_id;
+?>
 <?php include("header.php"); ?>
 <body>
 <div data-role="page"> 
@@ -34,10 +38,6 @@
 						
 						
 					} while($row = mysql_fetch_array($eventchoices));
-					
-					//sending that event_id to the next page using a session	
-					session_start();
-					$_SESSION['event_id'] = $event_id;
 				?>
 
 				
