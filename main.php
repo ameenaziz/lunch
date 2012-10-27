@@ -6,6 +6,12 @@
 				 <?php
 				   include ('connect.php');
 					
+					//getting that event_id from  the url 
+ 					if (isset($_GET['event_id'])) {
+					$event_id = $_GET['event_id'];
+					}
+		
+
 					//Get the last inserted data based on the event_id 
 					//query here has the restaurants id added.
 					$eventchoices = mysql_query(
@@ -15,7 +21,8 @@
 							FROM event_choices
 							INNER JOIN restaurants ON event_choices.res_id = restaurants.res_id
 							INNER JOIN event ON event_choices.event_id = event.event_id 
-							WHERE event.event_id = (SELECT MAX(event_id) FROM event)
+							
+							WHERE event.event_id = $event_id;
 				
 					"
 					);

@@ -5,6 +5,7 @@
 	<div data-role="content">
 				<?php
 				   include ('connect.php');
+
     				mysql_query("INSERT INTO event (event_name) VALUES ('$_POST[eventName]')");
 					$event_id = mysql_insert_id();
      				foreach ($_POST['opt'] as $res_id) { 
@@ -34,7 +35,13 @@
 						
 					} while($row = mysql_fetch_array($eventchoices));
 					
+					//sending that event_id to the next page using a session	
+					session_start();
+					$_SESSION['event_id'] = $event_id;
 				?>
+
+				
+
                <a href="send.php" data-role="button" data-transition="slidefade" data-icon="forward">Send email invites</a>
 		
 	</div> 

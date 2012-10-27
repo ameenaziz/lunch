@@ -6,6 +6,10 @@
 	<div data-role="content">
 		<?php
 
+		//getting that event_id from  the process.php page
+		session_start();
+		$event_id = $_SESSION['event_id'];
+		
 		$from_name = "Go 4 Lunch Host";
 		$from_email = "go4lunch@ameenaziz.com";
 		$subject = "Vote for the lunch venu";
@@ -19,22 +23,28 @@
 		
 		foreach ($email_address_list as $email_address) {
 			
-			// Url generation
-			$url = "http://ameenaziz.com/lunch/main.php?email=" . $email_address;
-			
+			// Url generation needs to dynamic for local and production
+			$url = "http://ameenaziz.com/lunch/main.php?email=$email_address&event_id=$event_id";		
+
 			// Message generation
-			$message = "Vote using this link: $url";
+			$message = "Vote using this link:";
 			
 			// Send email
-			echo "$message\n\n";
+			echo "$message";
+
+			echo "<a href=\"$url\">$url</a>";
+
 			//mail($email_address, $subject, $message, $headers);
 		}
 		echo '<br><br>';
 
 		echo 'email sent';
 
-		echo '<br><br>'
+	
+
+
 		?>         	
+
 	</div> 
 	<div data-role="footer"><?php include("footer.php"); ?></div> 
 </div> 	

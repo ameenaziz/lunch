@@ -2,7 +2,20 @@
 
 <?php
     include ('connect.php');
-    $result = mysql_query("SELECT * FROM restaurants") or die(mysql_error());  
+    $result = mysql_query("SELECT * FROM restaurants") or die(mysql_error()); 
+
+?>
+
+<?php
+//validation 
+if(isset($_POST['submit'])){
+
+    if($_POST['eventName'] == ""){
+        $error="Please enter a topic<br>"; 
+    }
+}
+
+
 ?>
 <body>
 
@@ -13,7 +26,7 @@
                 <div data-role="fieldcontain">
                     <fieldset data-role="controlgroup">
                        <?php 
-                            echo "<input type=\"text\" placeholder='Enter an event name'  name=\"eventName\" />";  
+                            echo "<input type=\"text\" placeholder='Enter an event name' name=\"eventName\" />";  
                             echo "<br><br>";
                             while ($row = mysql_fetch_array($result))
                             {
