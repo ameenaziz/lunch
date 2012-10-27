@@ -42,7 +42,7 @@
 
 				
 
-               <a href="send.php" data-role="button" data-transition="slidefade" data-icon="forward">Send email invites</a>
+               <a href="send.php" data-role="button" data-transition="slidefade" data-icon="forward" data-ajax="false">Send email invites</a>
 		
 	</div> 
 	<div data-role="footer"><?php include("footer.php"); ?></div> 

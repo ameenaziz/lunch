@@ -1,3 +1,7 @@
+<?php   
+  session_start();
+  $_SESSION['event_id'] = $event_id;
+?>
 <?php include("header.php"); ?>
 <body>
 <div data-role="page"> 
@@ -11,11 +15,15 @@
             $email = $_POST['email'];
 
             
+           $url = "http://ameenaziz.com/lunch/results.php?event_id=$event_id";
+
            // echo $event_name;
            // echo "<br><br>";
            /// echo $selected_radio;
-            echo "$selected_radio, $event_id, '$email<br><br>";
+            echo "$selected_radio, $event_id, $email<br><br>";
             mysql_query("insert into votes (res_id, event_id, email_address) values ($selected_radio, $event_id, '$email' )");
+
+            echo "See the results : <a href=\"$url\">$url</a>";
        
             
       ?>

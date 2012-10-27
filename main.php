@@ -1,3 +1,7 @@
+<?php 	
+	session_start();
+	$_SESSION['event_id'] = $event_id;
+?>
 <?php include("header.php"); ?>
 <body>
 <div data-role="page"> 
@@ -21,7 +25,6 @@
 							FROM event_choices
 							INNER JOIN restaurants ON event_choices.res_id = restaurants.res_id
 							INNER JOIN event ON event_choices.event_id = event.event_id 
-							
 							WHERE event.event_id = $event_id;
 				
 					"
@@ -47,7 +50,7 @@
 							
 						} while($row = mysql_fetch_array($eventchoices));
 					?>
-                    <input type="submit" data-transition="slidefade" value="Vote"> 
+                    <input type="submit" data-transition="slidefade" data-ajax="false" value="Vote"> 
                 
               	   </form>
 	</div> 

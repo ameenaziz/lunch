@@ -10,12 +10,10 @@
 		<?php
 
 		//getting that event_id from  the process.php page
-
-		
 		$from_name = "Go 4 Lunch Host";
 		$from_email = "go4lunch@ameenaziz.com";
-		$subject = "Vote for the lunch venu";
-		$email_address_list = array("ameenaziz@gmail.com");
+		$subject = "Vote for the lunch venue";
+		$email_address_list = array("ameenaziz@gmail.com", "ameenabdulaziz@gmail.com");
 
 		//godaddy does not allow a "From:" in the header
 		$headers = "$from_name <$from_email>\r\n".
@@ -28,19 +26,17 @@
 			// Url generation needs to dynamic for local and production
 			$url = "http://ameenaziz.com/lunch/main.php?email=$email_address&event_id=$event_id";		
 
+			
 			// Message generation
-			$message = "Vote using this link:";
+			$message = "Vote using this link:" . $url;
 			
 			// Send email
-			echo "$message";
+			//echo "$message";
 
-			echo "<a href=\"$url\">$url</a>";
-
-			//mail($email_address, $subject, $message, $headers);
+			//echo "<a href=\"$url\">$url</a>";
+			mail($email_address, $subject, $message, $headers);
 		}
-		echo '<br><br>';
-
-		echo 'email sent';
+		echo '<br><br>email sent';
 		?>         	
 
 	</div> 

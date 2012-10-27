@@ -3,26 +3,12 @@
 <?php
     include ('connect.php');
     $result = mysql_query("SELECT * FROM restaurants") or die(mysql_error()); 
-
-?>
-
-<?php
-//validation 
-if(isset($_POST['submit'])){
-
-    if($_POST['eventName'] == ""){
-        $error="Please enter a topic<br>"; 
-    }
-}
-
-
 ?>
 <body>
-
 <div data-role="page"> 
     <div data-role="header" data-theme="a" data-position="fixed"> <h1>Step 1 setup choices</h1></div> 
     <div data-role="content">
-            <form action="process.php" method="post">
+            <form action="process.php" id="res_list" method="post" data-ajax="false">
                 <div data-role="fieldcontain">
                     <fieldset data-role="controlgroup">
                        <?php 
@@ -42,7 +28,5 @@ if(isset($_POST['submit'])){
     </div> 
     <div data-role="footer"><?php include("footer.php"); ?></div> 
 </div>
-
-
-</body
+</body>
 </html>
