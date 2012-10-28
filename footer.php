@@ -1,4 +1,3 @@
-<div data-role="footer" data-id="foo1" data-position="fixed">
         <div data-role="navbar">
             <ul>
                 <li><a href="index.php" data-role="button" data-transition="slidefade">Step 1 setup</a></li>
@@ -8,4 +7,3 @@
                 <li><a href="results.php" data-role="button" data-transition="slidefade">Step 5 results</a></li>
             </ul>
         </div><!-- /navbar -->
-</div><!-- /footer -->

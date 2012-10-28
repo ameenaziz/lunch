@@ -40,7 +40,7 @@
 		?>         	
 
 	</div> 
-	<div data-role="footer"><?php include("footer.php"); ?></div> 
+	<div data-role="footer" data-position="fixed"><?php include("footer.php"); ?></div> 
 </div> 	
 
 
