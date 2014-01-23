@@ -7,7 +7,7 @@ body {
 background-color:#eee;
 }
 
-	
+
 
 
 /*Home*/
@@ -36,18 +36,18 @@ background-color:#eee;
 /*Process*/
 .process h3 {
 color:#859CE6;
-}	
+}
 .process h3 span {
 	color:#000;
-}	
+}
 
 .process h4  {
 	margin:0;
 	padding:0;
 	color:#0077CC;
-}	
+}
 
-	
+
 /* Contain floats: h5bp.com/q */
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
