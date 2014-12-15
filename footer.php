@@ -6,4 +6,6 @@
         <li><a href="main.php" data-role="button" data-transition="slidefade">Step 4 vote</a></li>
         <li><a href="results.php" data-role="button" data-transition="slidefade">Step 5 results</a></li>
     </ul>
-</div><!-- /navbar -->
+</div>
+<!-- /navbar -->
+<?php include('javascripts.php') ?>

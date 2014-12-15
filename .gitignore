@@ -1,0 +1,6 @@
+*.version
+*.log
+.settings
+.project
+.classpath
+.c9

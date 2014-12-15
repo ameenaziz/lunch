@@ -13,7 +13,7 @@
                     <fieldset data-role="controlgroup">
                        <?php 
                             echo "<input type=\"text\" placeholder='Enter an event name' name=\"eventName\" />";  
-                            echo "<br><br>";
+                            
                             while ($row = mysql_fetch_array($result))
                             {
                                 echo "<input type=\"checkbox\" id=\"{$row['res_id']}\" name=\"opt[]\"value=\"{$row['res_id']}\"/> ";
@@ -26,6 +26,7 @@
                 </div>
             </form>
     </div> 
+    <script src="js/validate.js"></script>
     <div data-role="footer" data-position="fixed"><?php include("footer.php"); ?></div> 
 </div>
 </body>

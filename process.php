@@ -30,7 +30,7 @@
 
 					$row = mysql_fetch_array($eventchoices);
 
-					echo "<h3><span>Event name </span>"  .$row['event_name'] .  "</h3><br>";
+					echo "<h3><span>Event name </span>"  .$row['event_name'] .  "</h3>";
 
 
 					do {
