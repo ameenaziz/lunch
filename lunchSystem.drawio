@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-04T20:35:37.496Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36" etag="_BopcZGTfuPy4DJ3civf" version="12.9.6" type="github">
+<mxfile host="app.diagrams.net" modified="2020-04-04T21:22:01.355Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36" etag="x3QIwuBMUjuOYII6g6bf" version="12.9.6" type="github">
   <diagram name="Page-1" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
     <mxGraphModel dx="1377" dy="730" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" background="#ffffff" math="0" shadow="0">
       <root>
@@ -21,7 +21,7 @@
         <mxCell id="PXa6PoAHHWMM4-qhzeyB-2" value="Setup vote page" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="195" y="310" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="PXa6PoAHHWMM4-qhzeyB-4" value="Select from map fro open times" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="PXa6PoAHHWMM4-qhzeyB-4" value="Select from map for open times" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="131" y="444" width="170" height="20" as="geometry" />
         </mxCell>
         <mxCell id="PXa6PoAHHWMM4-qhzeyB-7" value="Set timer for voting&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
