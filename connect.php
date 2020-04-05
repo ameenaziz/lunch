@@ -1,13 +1,8 @@
 <?php
 
 
-$con = mysql_connect("localhost","root","");
-if (!$con)
-  {
+$con = mysql_connect("localhost", "ameen", "vmax");
+if (!$con) {
   die('Could not connect: ' . mysql_error());
-  }
-else {
-
-}
+} else { }
 mysql_select_db("lunch", $con);
-?>
