@@ -1,8 +1,0 @@
-SELECT event.event_name, restaurants.res_name, count(*)  AS Count
-FROM votes
-INNER JOIN restaurants ON votes.res_id = restaurants.res_id
-INNER JOIN event ON votes.event_id = event.event_id
-
-WHERE event.event_id = 157
-group by votes.res_id
-order by Count desc
