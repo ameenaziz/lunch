@@ -14,5 +14,5 @@ System plan
 https://app.diagrams.net/#Hameenaziz%2Flunch%2Fmaster%2FlunchSystem.drawio
 
     TODO
-        - [ ] list of Components
-        - [ ] endpoints 
+        - [ ] Components
+        - [ ] Endpoints 
