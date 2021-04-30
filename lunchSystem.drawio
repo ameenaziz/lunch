@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-04-30T12:17:22.377Z" agent="5.0 (Linux; Android 9; ANE-LX2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.91 Mobile Safari/537.36" etag="zVL9iOb_U1ladfb6F9Qn" version="14.6.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-30T12:19:42.664Z" agent="5.0 (Linux; Android 9; ANE-LX2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.91 Mobile Safari/537.36" etag="Qd4BdwZ4lPrmMEiNjF2q" version="14.6.9" type="github">
   <diagram name="Page-1" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
-    <mxGraphModel dx="1650" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1600" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="4125" dy="1525" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1600" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -170,7 +170,7 @@
           <mxGeometry x="931" y="309.9999999999999" width="179" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Yc24nvuKme1WT67jPDYJ-84" value="e-mail to recipients" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="1668" y="330" width="132" height="80" as="geometry" />
+          <mxGeometry x="1668" y="330" width="127" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Yc24nvuKme1WT67jPDYJ-87" value="Setup Lunch event form" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="120" y="350" width="170" height="20" as="geometry" />
